@@ -6,6 +6,6 @@ class Home extends CI_Controller {
 	public function index()
 	{
                 $d['v']='home/index';
-		$this->load->view('layout',$d);
+		$this->load->view('default',$d);
 	}
 }
