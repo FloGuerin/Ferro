@@ -17,21 +17,21 @@
                          data-y="255"
                          data-speed="300"
                          data-start="500"
-                         data-easing="easeOutExpo" data-end="8400" data-endspeed="300" data-endeasing="easeInSine" >FERRO</div>
+                         data-easing="easeOutExpo" data-end="6400" data-endspeed="300" data-endeasing="easeInSine" >FERRO</div>
 
                     <div class="caption custom_text lfl stl"
                          data-x="center"
                          data-y="324"
                          data-speed="300"
                          data-start="800"
-                         data-easing="easeOutExpo" data-end="8600" data-endspeed="300" data-endeasing="easeInSine" >PIXEL-PERFECT DESIGN</div>
+                         data-easing="easeOutExpo" data-end="6600" data-endspeed="300" data-endeasing="easeInSine" >LA FRAICHEUR</div>
                          
                      <div class="caption custom_text_link lfl stl"
                          data-x="center"
                          data-y="379"
                          data-speed="300"
                          data-start="1200"
-                         data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine" ><span class="color-text">FOR DIGITAL OR CREATIVE AGENCY</span></div>
+                         data-easing="easeOutExpo" data-end="6800" data-endspeed="300" data-endeasing="easeInSine" ><span class="color-text">DES FRUITS & LEGUMES</span></div>
                 </li>
                 
                 <!-- THE SECOND SLIDE -->
@@ -43,40 +43,41 @@
                          data-y="255"
                          data-speed="300"
                          data-start="500"
-                         data-easing="easeOutExpo" data-end="8400" data-endspeed="300" data-endeasing="easeInSine" >ULTRA RESPONSIVE</div>
+                         data-easing="easeOutExpo" data-end="6400" data-endspeed="300" data-endeasing="easeInSine" >AU COEUR DE RUNGIS</div>
 
                     <div class="caption custom_text sfb"
                          data-x="center"
                          data-y="324"
                          data-speed="300"
                          data-start="800"
-                         data-easing="easeOutExpo" data-end="8600" data-endspeed="300" data-endeasing="easeInSine" >LOOKS AWESOME ON ANY DEVICES</div>
+                         data-easing="easeOutExpo" data-end="6600" data-endspeed="300" data-endeasing="easeInSine" >LE PLUS GRAND MARCHE INTERNATIONAL</div>
                          
-                     <div class="caption custom_text_link sfb"
-                         data-x="center"
-                         data-y="379"
-                         data-speed="300"
-                         data-start="1200"
-                         data-easing="easeOutExpo" data-end="8800" data-endspeed="300" data-endeasing="easeInSine" ><a href="#">LEARN MORE</a></div>
+                     
                 </li>
                 
                 <!-- THE THIRD SLIDE -->
                 <li data-transition="random" data-slotamount="1" data-masterspeed="300">
                     <img src="<?php echo(IMG.'slider/image-03.jpg'); ?>" alt="Image" data-fullwidthcentering="on">
                     
-                    <div class="caption very_big_custom_text sft"
+                    <div class="caption custom_text sft"
                          data-x="center"
-                         data-y="290"
+                         data-y="260"
                          data-speed="300"
                          data-start="500"
-                         data-easing="easeOutExpo" data-end="8400" data-endspeed="300" data-endeasing="easeInSine" >BE CREATIVE</div>
+                         data-easing="easeOutExpo" data-end="6400" data-endspeed="300" data-endeasing="easeInSine" >ACHAT AUPRES DES PRODUCTEURS</div>
 
                     <div class="caption custom_text sft"
                          data-x="center"
-                         data-y="360"
+                         data-y="330"
                          data-speed="300"
                          data-start="800"
-                         data-easing="easeOutExpo" data-end="8600" data-endspeed="300" data-endeasing="easeInSine" >...AND ANIMATE ANYTHING YOU WANT!</div>
+                         data-easing="easeOutExpo" data-end="6600" data-endspeed="300" data-endeasing="easeInSine" >CONSEILS DE NOS EXPERTS</div>
+                    <div class="caption custom_text sfb"
+                         data-x="center"
+                         data-y="390"
+                         data-speed="300"
+                         data-start="1200"
+                         data-easing="easeOutExpo" data-end="6800" data-endspeed="300" data-endeasing="easeInSine" >LIVRAISON DANS VOTRE MAGASIN</div>
                 </li>
                             
             </ul>

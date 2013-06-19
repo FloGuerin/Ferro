@@ -337,7 +337,7 @@ header {
 
 header #logo a {
 	color: #a9e03e;
-	font-size: 60px;
+	font-size: 83px;
 	font-weight:700;
         font-family:'Gabriola';
         font-style:italic;
@@ -347,7 +347,7 @@ header #logo a {
 }
 
 header #logo img{
-    width:75px;
+    width:70px;
     vertical-align:middle;
     margin-top:-10px;
     margin-right:7px;

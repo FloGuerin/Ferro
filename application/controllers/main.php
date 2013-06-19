@@ -20,4 +20,19 @@ class Main extends CI_Controller {
                 $d['body']='body/contact';
 		$this->load->view('default',$d);
 	}
+        public function galerie()
+	{
+                $d['body']='body/galerie';
+		$this->load->view('default',$d);
+	}
+        public function services()
+	{
+                $d['body']='body/services';
+		$this->load->view('default',$d);
+	}
+        public function references()
+	{
+                $d['body']='body/references';
+		$this->load->view('default',$d);
+	}
 }

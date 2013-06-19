@@ -70,11 +70,11 @@ ANUBIS.slider = function(){
 		// Full Screen Slider
 		tpj('.fullwidthbanner').revolution(
 			{
-				delay:9000,
+				delay:7000,
 				startwidth:1200,
 				startheight:700,
 
-				onHoverStop:"on",						// Stop Banner Timet at Hover on Slide on/off
+				onHoverStop:"off",						// Stop Banner Timet at Hover on Slide on/off
 
 				thumbWidth:100,							// Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
 				thumbHeight:50,
