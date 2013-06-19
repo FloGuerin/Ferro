@@ -9,6 +9,12 @@ class Main extends CI_Controller {
 		$this->load->view('default',$d);
 	}
         
+        public function presentation()
+	{
+                $d['body']='body/presentation';
+		$this->load->view('default',$d);
+	}
+        
         public function contact()
 	{
                 $d['body']='body/contact';

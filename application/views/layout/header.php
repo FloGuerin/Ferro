@@ -1,21 +1,22 @@
 <!-- Start Header -->
+
 	<header>
             <div class="container">
                 <div class="row">
-        	<div class="span2">
+        	<div class="span3">
             	<div id="logo">
-                    <a href="index" title="Ferro">Ferro</a>
+                    <a href="index" title="Ferro"><img src="<?php echo(IMG.'logo.png'); ?>"/>Ferro</a>
                 </div>
             </div>
             
-            <div class="span10">
+            <div class="span9">
             	<!-- Mobile Menu -->
             	<a id="mobile-nav" class="menu-nav" href="#menu-nav"><span class="menu-icon"></span></a>
                 
                 <!-- Standard Menu -->
         		<nav id="menu">
                     <ul id="menu-nav">
-                        <li><a href="index-2.html">Presentation</a></li>
+                        <li><a href="presentation">Presentation</a></li>
                         <li><a href="elements.html">Produits & services</a>
                         	<ul class="sub-menu arrow-up">
                                 <li><a href="full-width.html">Full Width</a></li>

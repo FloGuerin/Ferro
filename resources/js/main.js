@@ -410,15 +410,17 @@ ANUBIS.map = function(){
 			
 			
 			
-			var latlng = new google.maps.LatLng($map_lat, $map_lon);			
+			var latlng = new google.maps.LatLng($map_lat, $map_lon);
+                        var center= new google.maps.LatLng('48.789', '2.331');
 			var options = { 
-				scrollwheel: false,
-				draggable: false, 
-				zoomControl: false,
+				scrollwheel: true,
+				draggable: true, 
+				zoomControl: true,
 				disableDoubleClickZoom: false,
 				disableDefaultUI: true,
 				zoom: $map_zoom,
-				center: latlng,
+				center: center,
+                                mapTypeControl: true,
 				mapTypeId: google.maps.MapTypeId.ROADMAP
 			};
 			
@@ -432,7 +434,7 @@ ANUBIS.map = function(){
 			
 			var map = new google.maps.Map(document.getElementById($map_id), options);
 		
-			var image = '_include/img/map-marker.png';
+			var image = 'resources/img/map-marker.png';
 			var marker = new google.maps.Marker({
 				position: latlng,
 				map: map,
@@ -443,12 +445,13 @@ ANUBIS.map = function(){
 			map.mapTypes.set('map_style', styledMap);
   			map.setMapTypeId('map_style');
 			
-			var contentString = '<p><strong>Company Name</strong><br>Address here</p>';
+			var contentString = '<p><strong>Ferro SAS</strong><br>Bât. A3 -93, Avenue de Bourgogne <br/>94581 Rungis Cedex – Fruleg CP60573</p>';
        
 			var infowindow = new google.maps.InfoWindow({
 				content: contentString
 			});
-			
+			var transitLayer = new google.maps.TransitLayer();
+                        transitLayer.setMap(map);
 			google.maps.event.addListener(marker, 'click', function() {
       			infowindow.open(map,marker);
     		});

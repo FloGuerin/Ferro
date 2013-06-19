@@ -38,6 +38,7 @@
 |
 */
 $route['contact'] = "main/contact";
+$route['presentation'] = "main/presentation";
 $route['index'] = "main/index";
 $route['default_controller'] = "main";
 $route['404_override'] = 'error/not_found';
