@@ -22,8 +22,8 @@ html, hmtl a{
 body{
 	background:#FFFFFF;
 	color:#323A45;
-	font-weight:300;
-	font-size:16px;
+	font-weight:400;
+	font-size:18px;
 	font-family: 'Open Sans', sans-serif;
 	line-height:28px;
 }
@@ -339,19 +339,29 @@ header #logo a {
 	color: #a9e03e;
 	font-size: 83px;
 	font-weight:700;
-        font-family:'Gabriola';
+        font-family: 'Gabiola',Helvetica, sans-serif;
         font-style:italic;
 	
-	line-height: 95px;
+	line-height: 90px;
 	letter-spacing: -0.4px;
 }
 
-header #logo img{
-    width:70px;
+header #logo .logo{
+    max-width:75px;
+    width:29%;
     vertical-align:middle;
     margin-top:-10px;
     margin-right:7px;
 }
+
+header #logo .titrePrincipal{
+    max-width:190px;
+    width:66%;
+    height:100%;
+    vertical-align:middle;
+    margin-top:-15px;
+}
+
 header #logo a:hover {
 	color: #a9e03e;	
 }
@@ -378,7 +388,7 @@ nav#menu #menu-nav li a {
 	color: #323A45;
 	font-size: 15px;
 	font-weight: 600;
-	line-height: 100px;
+	line-height: 90px;
 	display: block;
 	letter-spacing: -0.2px;
 	text-transform: uppercase;
@@ -516,10 +526,9 @@ nav#menu #menu-nav li.sfHover ul a:hover {
 	position: absolute;
 	width: 16px;
 	height: 16px;
-	margin: -8px 0 0 0;
-	top: 50%;
-	right: 0;
-	
+	margin: 0 0 0 0;
+	top: 22px;
+margin-left: 22px;
 	background:url(../img/menu-mobile.png) 0 0 no-repeat;	
 	
 	-webkit-transform: rotate(0deg);
@@ -873,14 +882,14 @@ nav#menu #menu-nav li.sfHover ul a:hover {
 #title-page {
 	position: relative;
 	background-color: #3c4a54;
-	margin-top: 100px;
+	margin-top: 90px;
 }
 
 #title-page h2 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 300;
     line-height: 1.2;
-	padding: 35px 0;
+	padding: 29px 0;
 	margin-bottom: 0;
 	text-align: center;
         color:#a9e03e;
@@ -2966,3 +2975,6 @@ footer.footer-widgets .flickr-list ul li a:hover i {
 	background: url(../img/countdown-bg.jpg) center -300px no-repeat;
 }
 
+.texte p{
+    text-align:justify;
+}

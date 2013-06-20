@@ -8,14 +8,13 @@
 
 <div id="content">
     <!-- Start Typography Page -->
-    <section id="typography" class="container">
+    <section id="presentation" class="texte container">
     
 		<div class="row">
     		<div class="span12">
-        		<h1>Heading H1</h1>
-            	<p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus, nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum, faucibus at, tincidunt eget, porttitor non, dolor. 
-            	Ut dui lectus, ultrices ut, sodales tincidunt, viverra sed, nisl. Sed at odio ut arcu fringilla dictum eu eu nisl. Donec rutrum erat non arcu gravida porttitor. Nunc et magna nisi.Aliquam at erat in purus aliquet mollis. 
-            	Fusce elementum velit vel dolor iaculis egestas. Maecenas ut nulla quis eros scelerisque posuere vel vitae nibh.</p>
+        		<h2>Titre 1</h2>
+                    <p>FERRO S.A.S.  est une plate-forme d’achats et d’approvisionnement en activité depuis plus de 30 ans. Basée sur le M.I.N. de Rungis. elle est au coeur du plus grand marché de fruits et légumes.</p>
+                    <p>Historiquement, la société FERRO  s’est développée au sein du Groupe Hamon pour approvisionner en fruits et légumes ses supermarchés (enseignes Codec, puis Champion et Shopi) ainsi que ses cours des  halles.</p>
         	</div>
     	</div>
     
@@ -25,121 +24,33 @@
         
         <div class="row">
     		<div class="span12">
-        		<h2>Heading H2</h2>
-            	<p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus, nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum, faucibus at, tincidunt eget, porttitor non, dolor. 
-            	Ut dui lectus, ultrices ut, sodales tincidunt, viverra sed, nisl. Sed at odio ut arcu fringilla dictum eu eu nisl. Donec rutrum erat non arcu gravida porttitor. Nunc et magna nisi.Aliquam at erat in purus aliquet mollis. 
-            	Fusce elementum velit vel dolor iaculis egestas. Maecenas ut nulla quis eros scelerisque posuere vel vitae nibh.</p>
+        		<h2>Titre 2</h2>
+            	<p>Depuis Juillet 2000 FERRO  a été rachetée par des salariés et est devenue indépendante de toute enseigne. Elle met à la disposition de nombreux clients son expertise, son expérience et son savoir-faire acquis dans le domaine des achats et de l’approvisionnement des fruits et légumes.
+        <br/>Notre slogan : «La Fraîcheur et la Qualité, c’est notre métier »
+        <br/>Ainsi, pour atteindre une fraîcheur optimale de certains produits saisonniers, FERRO  traite directement avec les producteurs.</p>
         	</div>
     	</div>
-    
-    	<div class="row">
+        
+        <div class="row">
     		<hr class="span12">
     	</div>
         
         <div class="row">
     		<div class="span12">
-        		<h3>Heading H3</h3>
-            	<p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus, nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum, faucibus at, tincidunt eget, porttitor non, dolor. 
-            	Ut dui lectus, ultrices ut, sodales tincidunt, viverra sed, nisl. Sed at odio ut arcu fringilla dictum eu eu nisl. Donec rutrum erat non arcu gravida porttitor. Nunc et magna nisi.Aliquam at erat in purus aliquet mollis. 
-            	Fusce elementum velit vel dolor iaculis egestas. Maecenas ut nulla quis eros scelerisque posuere vel vitae nibh.</p>
-        	</div>
-    	</div>
-    
-    	<div class="row">
-    		<hr class="span12">
-    	</div>
-        
-        <div class="row">
-    		<div class="span12">
-        		<h4>Heading H4</h4>
-            	<p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus, nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum, faucibus at, tincidunt eget, porttitor non, dolor. 
-            	Ut dui lectus, ultrices ut, sodales tincidunt, viverra sed, nisl. Sed at odio ut arcu fringilla dictum eu eu nisl. Donec rutrum erat non arcu gravida porttitor. Nunc et magna nisi.Aliquam at erat in purus aliquet mollis. 
-            	Fusce elementum velit vel dolor iaculis egestas. Maecenas ut nulla quis eros scelerisque posuere vel vitae nibh.</p>
-        	</div>
-    	</div>
-    
-    	<div class="row">
-    		<hr class="span12">
-    	</div>
-        
-        <div class="row">
-    		<div class="span12">
-        		<h5>Heading H5</h5>
-            	<p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus, nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum, faucibus at, tincidunt eget, porttitor non, dolor. 
-            	Ut dui lectus, ultrices ut, sodales tincidunt, viverra sed, nisl. Sed at odio ut arcu fringilla dictum eu eu nisl. Donec rutrum erat non arcu gravida porttitor. Nunc et magna nisi.Aliquam at erat in purus aliquet mollis. 
-            	Fusce elementum velit vel dolor iaculis egestas. Maecenas ut nulla quis eros scelerisque posuere vel vitae nibh.</p>
-        	</div>
-    	</div>
-    
-    	<div class="row">
-    		<hr class="span12">
-    	</div>
-        
-        <div class="row">
-    		<div class="span12">
-        		<h6>Heading H6</h6>
-            	<p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus, nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum, faucibus at, tincidunt eget, porttitor non, dolor. 
-            	Ut dui lectus, ultrices ut, sodales tincidunt, viverra sed, nisl. Sed at odio ut arcu fringilla dictum eu eu nisl. Donec rutrum erat non arcu gravida porttitor. Nunc et magna nisi.Aliquam at erat in purus aliquet mollis. 
-            	Fusce elementum velit vel dolor iaculis egestas. Maecenas ut nulla quis eros scelerisque posuere vel vitae nibh.</p>
-        	</div>
-    	</div>
-    
-    	<div class="row">
-    		<hr class="span12">
-    	</div>
-        
-        <div class="row">
-        	<div class="span6">
-            	<h3>Unordered List</h3>
-                <ul>
-                    <li>Pellentesque non diam et tortor dignissim. </li>
-                    <li>Neque sit amet mauris egestas quis mattis. </li>
-                    <li>Cras justo odio, dapibus ac facilisis.</li>
-                    <li>Curabitur viver justo sed scelerisque.</li>
-                </ul>
-            </div>
-            
-            <div class="span6">
-            	<h3>Ordered List</h3>
-                <ol>
-                    <li>Pellentesque non diam et tortor dignissim. </li>
-                    <li>Neque sit amet mauris egestas quis mattis. </li>
-                    <li>Curabitur viver justo sed scelerisque.</li>
-                    <li>Condimentum aenean risus malesuada tortor.</li>
-                </ol>
-            </div>
-        </div>
-        
-        <div class="row">
-    		<hr class="span12">
-    	</div>
-        
-        <div class="row">
-        	<div class="span6">
-            	<h3>Special Text</h3>
-                <p>
-                	<em>This is emphasised text</em>
-                	<br>
-                	<strong>This is strong text</strong>
-                	<br>
-                	<abbr title="This is an abbr - <abbr></abbr>">This is an abbr</abbr>
-                	<br>
-                	<del>This is deleted text</del>
-                	<br>
-                	<a href="#">This is a link</a>
+        		<h2>Atouts</h2>
+            	<p>Notre société est classée dans les 40 premières entreprises de la filière en terme de chiffre d’affaires.</p>
+                
+                <p>Notre société dispose d’une flotte de plus de 20 camions poids-lourds et de plusieurs camionnettes pour assurer la logistique d’approvisionnement des points de vente.
+                <br/>
+                Nous avons également les moyens humains nécessaires à la qualité de service que sont en droit d’exiger nos clients :
+                <br/>
+                Une équipe de 4 acheteurs fruits et légumes,
+                5 commerciaux et conseillers techniques,
+                et un personnel qualifié et expérimenté qui assure la répartition et la livraison des marchandises.
                 </p>
-            </div>
-            
-            <div class="span6">
-            	<h3>Code</h3>
-                <pre>
-.empty {
-    width: 320px;
-    height: 200px;
-    background: #f3f3f5;
-    margin: 0 0 0 0;
-}                </pre>
-            </div>
+        	</div>
+    	</div>
+        
         </div>
         
     </section>

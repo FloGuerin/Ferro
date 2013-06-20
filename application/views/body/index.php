@@ -68,13 +68,13 @@
 
                     <div class="caption custom_text sft"
                          data-x="center"
-                         data-y="330"
+                         data-y="320"
                          data-speed="300"
                          data-start="800"
                          data-easing="easeOutExpo" data-end="6600" data-endspeed="300" data-endeasing="easeInSine" >CONSEILS DE NOS EXPERTS</div>
                     <div class="caption custom_text sfb"
                          data-x="center"
-                         data-y="390"
+                         data-y="380"
                          data-speed="300"
                          data-start="1200"
                          data-easing="easeOutExpo" data-end="6800" data-endspeed="300" data-endeasing="easeInSine" >LIVRAISON DANS VOTRE MAGASIN</div>
@@ -93,7 +93,7 @@
 	<div class="container">
     	<div class="row">
         	<div class="span12">
-            	<h3>We bring a personal and effective approach to every project we work on, which is why our clients love us and why they keep coming back.</h3>
+            	<h3>FERRO est une centrale d’achats et d’approvisionnement indépendante spécialisée dans les fruits & légumes. Notre savoir faire est reconnu depuis de nombreuses années par la profession.</h3>
                 <span class="arrow"></span>
             </div>
         </div>

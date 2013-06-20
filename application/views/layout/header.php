@@ -5,7 +5,7 @@
                 <div class="row">
         	<div class="span3">
             	<div id="logo">
-                    <a href="index" title="Ferro"><img src="<?php echo(IMG.'logo.png'); ?>"/>Ferro</a>
+                    <a href="index" title="Ferro"><img class="logo" src="<?php echo(IMG.'logo.png'); ?>"/><img class="titrePrincipal" src="<?php echo(IMG.'titre.png'); ?>"/></a>
                 </div>
             </div>
             
@@ -18,10 +18,10 @@
                     <ul id="menu-nav">
                         <li><a href="presentation">Présentation</a></li>
                         <li><a href="services">Produits & services</a>
-                            <ul class="sub-menu arrow-up">
+                           <!-- <ul class="sub-menu arrow-up">
                                 <li><a href="full-width.html">Full Width</a></li>
                                 <li><a href="about.html">About Us</a></li>
-                            </ul>
+                            </ul>-->
                         </li>
                         <li><a href="references">Références</a>
                         </li>

@@ -22,7 +22,7 @@
 @media (min-width: 768px) and (max-width: 979px) {
 	
 	header {
-		position: relative;	
+		position: static;	
 	}
 	
 	#title-page,
@@ -39,9 +39,12 @@
 	}
 	
 	header #logo a {
-		font-size: 24px;
+                font-size:24px;
 		line-height: 60px;	
 	}
+        /*header #logo a img{
+            max-height:55px;
+        }*/
 
 	#menu {
 		display: none;	
@@ -222,7 +225,7 @@
 @media (min-width: 481px) and (max-width: 767px) {
 	
 	header {
-		position: relative;	
+		position: static;	
 	}
 	
 	#title-page,
@@ -262,9 +265,11 @@
 	}
 	
 	header #logo a {
-		font-size: 24px;
 		line-height: 60px;	
 	}
+        header #logo a .titrePrincipal{
+            max-width:140px;
+        }
 	
 	header .span2 {
 		float: left;
@@ -283,6 +288,7 @@
 	#mobile-nav {
     	display: block;
 		float: right;
+                margin-top: -69px;
 	}
 	
 	/* Intro Box */
@@ -423,7 +429,7 @@
 @media (max-width: 480px) {
 	
 	header {
-		position: relative;	
+		position: static;	
 	}
 	
 	#title-page,
@@ -463,9 +469,11 @@
 	}
 	
 	header #logo a {
-		font-size: 24px;
 		line-height: 60px;	
 	}
+        header #logo a .titrePrincipal{
+            max-width:110px;
+        }
 	
 	header .span2 {
 		float: left;
@@ -484,6 +492,7 @@
 	#mobile-nav {
     	display: block;
 		float: right;
+                margin-top: -69px;
 	}
 	
 	/* Slider */

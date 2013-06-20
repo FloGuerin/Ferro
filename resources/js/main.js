@@ -450,8 +450,8 @@ ANUBIS.map = function(){
 			var infowindow = new google.maps.InfoWindow({
 				content: contentString
 			});
-			var transitLayer = new google.maps.TransitLayer();
-                        transitLayer.setMap(map);
+			/*var transitLayer = new google.maps.TransitLayer();
+                        transitLayer.setMap(map);*/
 			google.maps.event.addListener(marker, 'click', function() {
       			infowindow.open(map,marker);
     		});
