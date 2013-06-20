@@ -37,7 +37,7 @@ define('FOPEN_WRITE_CREATE_STRICT',				'xb');
 define('FOPEN_READ_WRITE_CREATE_STRICT',		'x+b');
 
 
-define('URL',$_SERVER['DOCUMENT_ROOT']);
+define('URL','');
 define('RS',URL.'resources/rs-plugin/');
 define('IMG',URL.'resources/img/');
 define('CSS',URL.'resources/css/');
