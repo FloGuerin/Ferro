@@ -7,6 +7,8 @@
         <meta name="HandheldFriendly" content="true"/>
         <meta name="MobileOptimized" content="320"/>   
 	<title>Ferro</title>
+        
+        <link rel="shortcut icon" href="<?php echo(IMG.'favicon.ico'); ?>" type="image/ico" />
         <link rel="stylesheet" href="<?php echo(CSS.'bootstrap.min.css'); ?>">
         <link rel="stylesheet" href="<?php echo(RS.'css/settings.css'); ?>">
         <link rel="stylesheet" href="<?php echo(CSS.'main.css'); ?>">
@@ -20,8 +22,8 @@
         <script src="<?php echo(JS.'modernizr.js'); ?>"></script> <!-- Default JS -->
         <script src="<?php echo(JS.'jquery-1.9.1.min.js'); ?>"></script>
         <script src="<?php echo(JS.'bootstrap.min.js'); ?>"></script>
-        <script src="<?php echo(RS.'js/jquery.themepunch.revolution.min.js'); ?>"></script>
-        <script src="<?php echo(RS.'js/jquery.themepunch.plugins.min.js'); ?>"></script>
+         <script src="<?php echo(RS.'js/jquery.themepunch.revolution.min.js'); ?>"></script>
+        <script src="<?php echo(RS.'js/jquery.themepunch.plugins.min.js'); ?>"></script>   
         <script src="<?php echo(JS.'jquery.superfish.min.js'); ?>"></script> <!-- Superfish -->
         <script src="<?php echo(JS.'jquery.supersubs.min.js'); ?>"></script> <!-- Supersubs -->
         <script src="<?php echo(JS.'jquery.isotope.js'); ?>"></script> <!-- Isotope Filter -->

@@ -1,6 +1,5 @@
 
         
-        
         <!-- Start Slider -->
 <section id="slider">
     <div class="fullwidthbanner-container">

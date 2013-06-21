@@ -1,12 +1,12 @@
 jQuery(function($){
 
-var ANUBIS = window.ANUBIS || {};
+var FERRO = window.FERRO || {};
 
 /* ==================================================
    Drop Menu
 ================================================== */
 
-ANUBIS.subMenu = function(){
+FERRO.subMenu = function(){
 	$('#menu-nav').supersubs({
 		minWidth: 12,
 		maxWidth: 27,
@@ -26,7 +26,7 @@ ANUBIS.subMenu = function(){
 /* Clone Menu for use later */
 var mobileMenuClone = $('#menu').clone().attr('id', 'navigation-mobile');
 
-ANUBIS.mobileNav = function(){
+FERRO.mobileNav = function(){
 	var windowWidth = $(window).width();
 	
 	// Show Menu or Hide the Menu
@@ -44,7 +44,7 @@ ANUBIS.mobileNav = function(){
 }
 
 // Call the Event for Menu 
-ANUBIS.listenerMenu = function(){
+FERRO.listenerMenu = function(){
 	$('#mobile-nav').on('click', function(e){
 		$(this).toggleClass('open');
 		
@@ -58,7 +58,7 @@ ANUBIS.listenerMenu = function(){
    Slider Settings
 ================================================== */
 
-ANUBIS.slider = function(){
+FERRO.slider = function(){
 	var tpj=jQuery;
 	tpj.noConflict();
 
@@ -180,7 +180,7 @@ ANUBIS.slider = function(){
 ================================================== */
 
 // Fix Hover on Touch Devices
-ANUBIS.utils = function(){
+FERRO.utils = function(){
 	
 	$('.work-item-thumbs, .box, .post-thumb, .single-people, .item-project, .lightbox').bind('touchstart', function(){
 		$(".tapped").removeClass("tapped");
@@ -189,65 +189,11 @@ ANUBIS.utils = function(){
 	
 }
 
-
-
-/* ==================================================
-   Filter Team
-================================================== */
-
-ANUBIS.people = function (){
-	if($('#team-people').length > 0){		
-		var $container = $('#team-people');
-		
-		$container.imagesLoaded(function() {
-			$container.isotope({
-			  // options
-			  animationEngine: 'best-available',
-			  itemSelector : '.single-people',
-			  layoutMode : 'fitRows'
-			});
-		});
-	
-		
-		// filter items when filter link is clicked
-		var $optionSets = $('#team-filter .option-set'),
-			$optionLinks = $optionSets.find('a');
-	
-		  $optionLinks.click(function(){
-			var $this = $(this);
-			// don't proceed if already selected
-			if ( $this.hasClass('selected') ) {
-			  return false;
-			}
-			var $optionSet = $this.parents('.option-set');
-			$optionSet.find('.selected').removeClass('selected');
-			$this.addClass('selected');
-	  
-			// make option object dynamically, i.e. { filter: '.my-filter-class' }
-			var options = {},
-				key = $optionSet.attr('data-option-key'),
-				value = $this.attr('data-option-value');
-			// parse 'false' as false boolean
-			value = value === 'false' ? false : value;
-			options[ key ] = value;
-			if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
-			  // changes in layout modes need extra logic
-			  changeLayoutMode( $this, options )
-			} else {
-			  // otherwise, apply new options
-			  $container.isotope( options );
-			}
-			
-			return false;
-		});
-	}
-}
-
 /* ==================================================
    Filter Portfolio
 ================================================== */
 
-ANUBIS.portfolio = function (){
+FERRO.portfolio = function (){
 	if($('#portfolio-projects').length > 0){		
 		var $container = $('#portfolio-projects');
 		
@@ -300,7 +246,7 @@ ANUBIS.portfolio = function (){
    DropDown 
 ================================================== */
 
-ANUBIS.dropDown = function(){
+FERRO.dropDown = function(){
 	$('.dropmenu').on('click', function(e){
 		$(this).toggleClass('open');
 		
@@ -328,7 +274,7 @@ ANUBIS.dropDown = function(){
    FancyBox
 ================================================== */
 
-ANUBIS.fancyBox = function(){
+FERRO.fancyBox = function(){
 	if($('.fancybox').length > 0 || $('.fancybox-media').length > 0 || $('.fancybox-various').length > 0){
 		
 		$(".fancybox").fancybox({				
@@ -361,41 +307,12 @@ ANUBIS.fancyBox = function(){
 }
 
 
-/* ==================================================
-   Contact Form
-================================================== */
-
-ANUBIS.contactForm = function(){
-	$("#contact-submit").on('click',function() {
-		$contact_form = $('#contact-form');
-		
-		var fields = $contact_form.serialize();
-		
-		$.ajax({
-			type: "POST",
-			url: "_include/php/contact.php",
-			data: fields,
-			dataType: 'json',
-			success: function(response) {
-				
-				if(response.status){
-					$('#contact-form input').val('');
-					$('#contact-form textarea').val('');
-				}
-				
-				$('#response').empty().html(response.html);
-			}
-		});
-		return false;
-	});
-}
-
 
 /* ==================================================
    Map
 ================================================== */
 
-ANUBIS.map = function(){
+FERRO.map = function(){
 	if($('.map').length > 0)
 	{
 
@@ -411,7 +328,7 @@ ANUBIS.map = function(){
 			
 			
 			var latlng = new google.maps.LatLng($map_lat, $map_lon);
-                        var center= new google.maps.LatLng('48.789', '2.331');
+                        var center= new google.maps.LatLng('48.793', '2.331');
 			var options = { 
 				scrollwheel: true,
 				draggable: true, 
@@ -439,7 +356,9 @@ ANUBIS.map = function(){
 				position: latlng,
 				map: map,
 				title: $map_title,
-				icon: image
+				icon: image,
+                                animation: google.maps.Animation.DROP,
+                                
 			});
 			
 			map.mapTypes.set('map_style', styledMap);
@@ -530,59 +449,13 @@ ANUBIS.map = function(){
 	}	
 }
 
-/* ==================================================
-   Flickr Widget
-================================================== */
 
-ANUBIS.flickr = function(){
-	// check if flickr_list exists
-	if($('.flickr-list').length > 0){
-		
-		// cycling all the flickr_list
-		$('.flickr-list').each(function(){
-			$count = $(this).attr('data-count'); // set photos counts by attribute data-count
-			
-			// append ul into flickr_list
-			$(this).html('<ul></ul>');
-			
-			$(this).find('ul').jflickrfeed({
-				limit: $count, // photos limit
-				itemTemplate: '<li><a href="{{link}}" title="{{title}}" target="_blank"><span class="overlay"></span><i class="font-icon-search"></i><img src="{{image_m}}" alt="{{title}}" title="{{title}}" /></a></li>', // list html template
-				qstrings: {
-					id: '52617155@N08' // your Flickr ID 
-				}
-			});
-		}); 
-	}
-}
-
-/* ==================================================
-   Twitter Widget
-================================================== */
-
-ANUBIS.twitter = function(){
-	// check if twitter_list exists
-	if($('.twitter-list').length > 0){
-		
-		// cycling all the twitter_list  
-		$(".twitter-list").each(function(){
-			$count = $(this).attr('data-count'); // set tweet counts by attribute data-count
-			
-			$(this).tweet({
-				join_text: '',
-				username: "Bluxart", // your Twitter ID
-				count: $count, // tweets limit
-				view_text: "View on Twitter" // alt text
-			});	
-		});
-	}	
-}
 
 /* ==================================================
    Accordion
 ================================================== */
 
-ANUBIS.accordion = function(){
+FERRO.accordion = function(){
 	var accordion_trigger = $('.accordion-heading.accordionize');
 	
 	accordion_trigger.delegate('.accordion-toggle','click', function(e){
@@ -604,7 +477,7 @@ ANUBIS.accordion = function(){
    Toggle
 ================================================== */
 
-ANUBIS.toggle = function(){
+FERRO.toggle = function(){
 	var accordion_trigger_toggle = $('.accordion-heading.togglize');
 	
 	accordion_trigger_toggle.delegate('.accordion-toggle','click', function(e){
@@ -625,7 +498,7 @@ ANUBIS.toggle = function(){
    Tooltip
 ================================================== */
 
-ANUBIS.toolTip = function(){ 
+FERRO.toolTip = function(){ 
     $('a[data-toggle=tooltip]').tooltip();
 }
 
@@ -634,7 +507,7 @@ ANUBIS.toolTip = function(){
 	Scroll to Top
 ================================================== */
 
-ANUBIS.scrollToTop = function(){
+FERRO.scrollToTop = function(){
 	var didScroll = false;
 
 	var $arrow = $('#back-to-top');
@@ -666,7 +539,7 @@ ANUBIS.scrollToTop = function(){
 	Center Images
 ================================================== */
 
-ANUBIS.getSize = function(){
+FERRO.getSize = function(){
 	
 	if($('#image-static .fullimage-container').length > 0){
 		$('#image-static .fullimage-container').each(function() {
@@ -691,7 +564,7 @@ ANUBIS.getSize = function(){
 	
 }
 
-ANUBIS.centerImg = function(){
+FERRO.centerImg = function(){
 	if($('#image-static .fullimage-container').length > 0){
 		$('#image-static .fullimage-container').each(function(){
 			var img = $(this).find('img'),
@@ -740,7 +613,7 @@ ANUBIS.centerImg = function(){
    Opacity Slider Elements on Scroll
 ================================================== */
 
-ANUBIS.changeOpacity = function(){
+FERRO.changeOpacity = function(){
 	var arrows = $('.fullwidthbanner-container .tparrows, .fullwidthbanner-container .tp-bullets');
 	
 	$(window).scroll(function(){
@@ -754,14 +627,14 @@ ANUBIS.changeOpacity = function(){
 	Init
 ================================================== */
 
-ANUBIS.slider();
+FERRO.slider();
 
 $(document).ready(function(){
 	// Call placeholder.js to enable Placeholder Property for IE9
 	Modernizr.load([
 	{
 		test: Modernizr.input.placeholder,
-		nope: '_include/js/placeholder.js', 
+		nope: 'resources/js/placeholder.js', 
 		complete : function() {
 				if (!Modernizr.input.placeholder) {
 						Placeholders.init({
@@ -775,32 +648,28 @@ $(document).ready(function(){
 	}
 	]);
 	
-	ANUBIS.utils();
+	FERRO.utils();
 	
-	ANUBIS.getSize();
-	ANUBIS.centerImg();
+	FERRO.getSize();
+	FERRO.centerImg();
 	
-	ANUBIS.mobileNav();
-	ANUBIS.listenerMenu();
-	ANUBIS.subMenu();
-	ANUBIS.dropDown();
-	ANUBIS.people();
-	ANUBIS.portfolio();
-	ANUBIS.accordion();
-	ANUBIS.toggle();
-	ANUBIS.toolTip();
-	ANUBIS.fancyBox();
-	ANUBIS.map();
-	ANUBIS.flickr();
-	ANUBIS.twitter();
-	ANUBIS.contactForm();
-	ANUBIS.scrollToTop();
-	ANUBIS.changeOpacity();
+	FERRO.mobileNav();
+	FERRO.listenerMenu();
+	FERRO.subMenu();
+	FERRO.dropDown();
+	FERRO.portfolio();
+	FERRO.accordion();
+	FERRO.toggle();
+	FERRO.toolTip();
+	FERRO.fancyBox();
+	FERRO.map();
+	FERRO.scrollToTop();
+	FERRO.changeOpacity();
 });
 
 $(window).resize(function(){
-	ANUBIS.centerImg();
-	ANUBIS.mobileNav();
+	FERRO.centerImg();
+	FERRO.mobileNav();
 });
 
 });
