@@ -433,7 +433,7 @@ ANUBIS.map = function(){
 			var styledMap = new google.maps.StyledMapType(styles,{name: "Styled Map"});
 			
 			var map = new google.maps.Map(document.getElementById($map_id), options);
-		
+                        
 			var image = 'resources/img/map-marker.png';
 			var marker = new google.maps.Marker({
 				position: latlng,
@@ -450,12 +450,82 @@ ANUBIS.map = function(){
 			var infowindow = new google.maps.InfoWindow({
 				content: contentString
 			});
-			/*var transitLayer = new google.maps.TransitLayer();
-                        transitLayer.setMap(map);*/
+			
+                        
+                        
 			google.maps.event.addListener(marker, 'click', function() {
       			infowindow.open(map,marker);
     		});
+                        
+                        /*option traffic*/
+                        var controlDiv1 = document.createElement('DIV');
+                        $(controlDiv1).addClass('gmap-control-container1')
+                                     .addClass('gmnoprint1');
 
+                        var controlUI1 = document.createElement('DIV');
+                        $(controlUI1).addClass('gmap-control1');
+                        $(controlUI1).text('Trafic');
+                        $(controlDiv1).append(controlUI1);
+
+                        var legend = '<ul>'
+                                   + '<li><span style="background-color: #30ac3e">&nbsp;&nbsp;</span><span style="color: #30ac3e"> &gt; 80 km/h</span></li>'
+                                   + '<li><span style="background-color: #ffcf00">&nbsp;&nbsp;</span><span style="color: #ffcf00"> 40 - 80 km/h</span></li>'
+                                   + '<li><span style="background-color: #ff0000">&nbsp;&nbsp;</span><span style="color: #ff0000"> &lt; 40 km/h</span></li>'
+                                   + '<li><span style="background-color: #c0c0c0">&nbsp;&nbsp;</span><span style="color: #c0c0c0"> Pas de données disponibles</span></li>'
+                                   + '</ul>';
+
+                        var controlLegend1 = document.createElement('DIV');
+                        $(controlLegend1).addClass('gmap-control-legend1');
+                        $(controlLegend1).html(legend);
+                        $(controlLegend1).hide();
+                        $(controlDiv1).append(controlLegend1);
+
+                        // Set hover toggle event
+                        $(controlUI1)
+                            .mouseenter(function() {
+                                $(controlLegend1).show();
+                            })
+                            .mouseleave(function() {
+                                $(controlLegend1).hide();
+                            });
+
+                        var trafficLayer = new google.maps.TrafficLayer();
+
+                        google.maps.event.addDomListener(controlUI1, 'click', function() {
+                            if (typeof trafficLayer.getMap() == 'undefined' || trafficLayer.getMap() === null) {
+                                $(controlUI1).addClass('gmap-control-active1');
+                                trafficLayer.setMap(map);
+                            } else {
+                                trafficLayer.setMap(null);
+                                $(controlUI1).removeClass('gmap-control-active1');
+                            }
+                        });
+
+                        map.controls[google.maps.ControlPosition.TOP_RIGHT].push(controlDiv1);
+                        
+                        /*option transport en commun*/
+                        var controlDiv2 = document.createElement('DIV');
+                        $(controlDiv2).addClass('gmap-control-container2')
+                                     .addClass('gmnoprint2');
+
+                        var controlUI2 = document.createElement('DIV');
+                        $(controlUI2).addClass('gmap-control2');
+                        $(controlUI2).text('Metro/RER');
+                        $(controlDiv2).append(controlUI2);
+
+                        var transitLayer = new google.maps.TransitLayer();
+
+                        google.maps.event.addDomListener(controlUI2, 'click', function() {
+                            if (typeof transitLayer.getMap() == 'undefined' || transitLayer.getMap() === null) {
+                                $(controlUI2).addClass('gmap-control-active2');
+                                transitLayer.setMap(map);
+                            } else {
+                                transitLayer.setMap(null);
+                                $(controlUI2).removeClass('gmap-control-active2');
+                            }
+                        });
+
+                        map.controls[google.maps.ControlPosition.TOP_RIGHT].push(controlDiv2);
 		});
 	}	
 }
