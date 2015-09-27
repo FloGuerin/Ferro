@@ -12,12 +12,12 @@
         <link rel="stylesheet" href="<?php echo(CSS.'bootstrap.min.css'); ?>">
         <link rel="stylesheet" href="<?php echo(RS.'css/settings.css'); ?>">
         <link rel="stylesheet" href="<?php echo(CSS.'fancybox/jquery.fancybox.css'); ?>">
-        <link rel="stylesheet" href="<?php echo(CSS.'fonts.css'); ?>">
-         <link rel="stylesheet" href="<?php echo(CSS.'main.css'); ?>">
+        <link rel="stylesheet" href="<?php echo(CSS.'fonts.css'); ?>"> 
         <link rel="stylesheet" href="<?php echo(CSS.'shortcodes.css'); ?>">
         <link rel="stylesheet" href="<?php echo(CSS.'responsive.css'); ?>">
-        <link rel="stylesheet" href="<?php echo(CSS.'custom.css'); ?>">
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="<?php echo(CSS.'main.css'); ?>">
+        <link rel="stylesheet" href="<?php echo(CSS.'custom.css'); ?>">
         
         <script src="<?php echo(JS.'modernizr.js'); ?>"></script> <!-- Default JS -->
         <script src="<?php echo(JS.'jquery-1.9.1.min.js'); ?>"></script>
