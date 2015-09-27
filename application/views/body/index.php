@@ -104,7 +104,7 @@
 <section id="about" class="container margin-30">
 	<div class="row">
     	<div class="span4">
-        	<h3>What?</h3>
+        	<h3>Who?</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas neque diam, luctus at laoreet in, auctor ut tellus. Etiam enim lacus, ornare et tempor et, rhoncus rhoncus sem.</p>
 			<p>Cras in velit ante, eget pellentesque sem. Duis tincidunt erat quam. Etiam placerat sapien elit. Pellentesque egestas ornare sagittis. Sed augue lorem, dignissim eget bibendum vitae, scelerisque eget justo.</p>
         </div>
