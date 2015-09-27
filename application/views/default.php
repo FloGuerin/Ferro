@@ -11,9 +11,9 @@
         <link rel="shortcut icon" href="<?php echo(IMG.'favicon.ico'); ?>" type="image/ico" />
         <link rel="stylesheet" href="<?php echo(CSS.'bootstrap.min.css'); ?>">
         <link rel="stylesheet" href="<?php echo(RS.'css/settings.css'); ?>">
-        <link rel="stylesheet" href="<?php echo(CSS.'main.css'); ?>">
         <link rel="stylesheet" href="<?php echo(CSS.'fancybox/jquery.fancybox.css'); ?>">
         <link rel="stylesheet" href="<?php echo(CSS.'fonts.css'); ?>">
+         <link rel="stylesheet" href="<?php echo(CSS.'main.css'); ?>">
         <link rel="stylesheet" href="<?php echo(CSS.'shortcodes.css'); ?>">
         <link rel="stylesheet" href="<?php echo(CSS.'responsive.css'); ?>">
         <link rel="stylesheet" href="<?php echo(CSS.'custom.css'); ?>">
