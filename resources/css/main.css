@@ -382,6 +382,7 @@ nav#menu #menu-nav li {
 	list-style: none;
 	float: left;
 	padding: 0 17px;
+	 margin-top: 4px;
 }
 
 nav#menu #menu-nav li a {

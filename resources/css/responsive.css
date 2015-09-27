@@ -473,6 +473,7 @@
 	}
         header #logo a .titrePrincipal{
             max-width:110px;
+           margin-top: -10px;
         }
 	
 	header .span2 {
@@ -713,7 +714,7 @@
   	only screen and (min-resolution: 2dppx) {
 		
 		.menu-nav .menu-icon{
-			background-image: url(../img/menu-mobile_@2x.png);
+			background-image: url(../img/menu-mobile__402x.png);
 			background-size: 16px 32px;
 		}
 		
