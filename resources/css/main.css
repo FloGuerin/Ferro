@@ -769,11 +769,11 @@ margin-left: 22px;
 }
 
 .tp-leftarrow:before {
-    content: "\e0d5";
+    content: "\e0d6";
 }
 
 .tp-rightarrow:before {
-    content: "\e0d3";
+    content: "\e0d4";
 }
 
 .tparrows.tp-rightarrow:before {
